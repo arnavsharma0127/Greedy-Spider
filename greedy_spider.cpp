@@ -5,7 +5,7 @@
 #include<algorithm>
 #include<list>
 using namespace std;
-struct gra
+struct gra                       
 {
     int val;
     int degree;
