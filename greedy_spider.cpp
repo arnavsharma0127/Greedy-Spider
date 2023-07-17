@@ -3,7 +3,7 @@
 #include<stdio.h>
 #include<time.h>
 #include<algorithm>
-#include<list>
+#include<list>      
 using namespace std;
 struct gra                       
 {
@@ -29,7 +29,7 @@ bool isplaner(int web[100][100],int deg[100],int n)
     }
     sort(g,g+n,comparedegree);
     list<int> remaining,tmp;
-    for(i=0;i<n;i++)
+    for(i=0;i<n;i++)   
     {
         remaining.push_back(g[i].val);
     }
@@ -37,10 +37,10 @@ bool isplaner(int web[100][100],int deg[100],int n)
     while(!remaining.empty())
     {
         list<int>::iterator itr,itr2;
-        tmp.clear();
+        tmp.clear();   
         for(i=0;i<remaining.size()+1;i++)
         {
-            if(tmp.empty())
+            if(tmp.empty())  
             {
                 itr=remaining.begin();
                 tmp.push_back(*itr);
