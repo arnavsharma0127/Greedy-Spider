@@ -8,10 +8,10 @@ using namespace std;
 struct gra                       
 {
     int val;
-    int degree;
+    int degree;  
 };
 bool comparedegree(gra a, gra b)
-{
+{  
     if(a.degree > b.degree)
     {
         return true;
@@ -25,7 +25,7 @@ bool isplaner(int web[100][100],int deg[100],int n)
     for(i=0;i<n;i++)
     {
         g[i].val=i;
-        g[i].degree=deg[i];
+        g[i].degree=deg[i]; 
     }
     sort(g,g+n,comparedegree);
     list<int> remaining,tmp;
