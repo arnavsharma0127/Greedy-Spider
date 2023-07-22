@@ -7,7 +7,7 @@
 using namespace std;
 struct gra                       
 {
-    int val;
+    int val;        
     int degree;  
 };
 bool comparedegree(gra a, gra b)
