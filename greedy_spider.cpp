@@ -13,7 +13,7 @@ struct gra
 bool comparedegree(gra a, gra b)
 {  
     if(a.degree > b.degree)
-    {
+    {   
         return true;
     }
     return false;
